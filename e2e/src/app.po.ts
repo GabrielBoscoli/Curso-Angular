@@ -13,6 +13,14 @@ export class AppPage {
     return element(by.css(selector));
   }
 
+  getElementByLinkText(linkText: string) {
+    return element(by.partialLinkText(linkText));
+  }
+
+  getElementByButtonText(buttonText: string) {
+    return element(by.buttonText(buttonText));
+  }
+
   getAllElements(selector: string) {
     return element.all(by.css(selector));
   }
